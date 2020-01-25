@@ -19,6 +19,11 @@ char *get_image(char* fName)
     return image;
 }
 
+void display(char *bmpImage)
+{
+
+}
+
 void save_image(char *bmpImage, char *fName)
 {
     FILE *file = fopen(fName, "wb");

@@ -1,6 +1,6 @@
 #ifndef UQUANTIZE_H
 #define UQUANTIZE_H
 
-int uquantize(void *, int);
+void uquantize(void *, int);
 
 #endif

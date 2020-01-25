@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 
     int levels = atoi(argv[3]);
 
-    int a = uquantize(image, levels);
-    printf("%d",a);
+    uquantize(image, levels);
 
     save_image(image, argv[2]);
 

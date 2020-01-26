@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
     }
 
     char *image = get_image(argv[1]);
+    display(image);
 
     int levels = atoi(argv[3]);
 

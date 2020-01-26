@@ -59,7 +59,7 @@ skip:
     jg      main_loop               ;if not change next byte
 
 end:
-    mov     al,bl
+
     mov     esp, ebp
     pop     esi
     pop     edi

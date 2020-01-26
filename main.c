@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     if(argc < 3)
     {
         printf("Blad przy wpisywaniu argumentow.");
-        return -1;
+        return 2;
     }
 
     char *image = get_image(argv[1]);
@@ -14,8 +14,13 @@ int main(int argc, char *argv[])
 
     int levels = atoi(argv[3]);
 
-    uquantize(image, levels);
+    if(levels > 255)
+    {
+        printf("Za duza wartosc levels.");
+        return 3;
+    }
 
+    uquantize(image, levels);
     save_image(image, argv[2]);
 
     return 0;

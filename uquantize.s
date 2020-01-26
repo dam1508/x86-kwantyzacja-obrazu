@@ -19,7 +19,7 @@ uquantize:
     mov     ebp, esp
 
     xor     eax, eax
-    mov     bl, [ebp + 20]         ;second argument - levels
+    mov     bl, [ebp + 20]          ;second argument - levels
     mov     al, 255
     div     bl
 

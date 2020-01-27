@@ -19,6 +19,11 @@ char *get_image(char* fName)
     return image;
 }
 
+void display(char *bmpImage)
+{
+    printf("\nwidth: %d\nheight: %d\n\n", *(int*)&bmpImage[18], *(int*)&bmpImage[22]);
+}
+
 void save_image(char *bmpImage, char *fName)
 {
     FILE *file = fopen(fName, "wb");
